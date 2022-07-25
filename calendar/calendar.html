@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style></style>
+        <title>O que jair tá fazendo?</title>
+        <link rel="stylesheet" href="calendar.css">
+    </head>
+    <body>
+        <!-- início do menu -->
+        <nav>
+            <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div> 
+                <div class="logo">
+                    <h1>Calendário</h1>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-items">
+                        <li class="menu-iten"> <a href="https://oquejair.github.io/site">Início</a> </li>
+                        <li class="menu-iten"> <a href="https://twitter.com/oquejair" target="_blank">Bot Twitter</a> </li>
+                        <li class="menu-iten"> <a href="https://t.me/oquejair_bot" target="_blank">Bot Telegram</a> </li>
+                        <li class="menu-iten"> <a href="https://oquejair.github.io/site/quiz/quiz.html">Quiz</a> </li>
+                        <li class="menu-iten"> <a href="https://oquejair.github.io/site/calendar/calendar.html">Calendário</a> </li>
+                        <li class="menu-iten"> <a href="https://oquejair.github.io/site/map/map.html">Mapa</a> </li>
+                        <li class="menu-iten"> <a href="https://github.com/oquejair/oquejair" target="_blank">Código aberto</a> </li>
+                        <li class="menu-iten"> <a href="https://oquejair.github.io/site/about/about.html">Sobre</a> </li>
+                    </div>
+            </div>
+            </div>
+        </nav>
+        <!-- fim do menu -->
+        <main>
+            <div class="explanation">
+                <h3><b>Quantas horas por dia o presidente trabalha?</b></h3>
+                <p>A fama de "preguiçoso" do presidente já é um assunto discutido nos bastidores do Palácio do Planalto. Pesquisas mostraram que passeios de moto, de jet ski, férias prolongadas, idas à padarias - não são nada populares e têm causado o efeito oposto.</p>
+                <p>Com base na agenda oficial do presidente, onde deveriam estar todos os compromissos dele, elaboramos 2 visualizações de dados. A primeira é um pictograma interativo e você pode explorar separadamente quantas dias ele trabalhou de acordo com as horas selecionadas.</p>
+                <p>Deixamos com você as suas próprias conclusões.</p>
+            </div>
+            <div class="menu">
+                <p><b>Horário</b></p>
+                <label>
+                    <input type="checkbox" name="menu" value="+8"> Mais de 8h
+                </label>
+                <label>
+                    <input type="checkbox" name="menu" value="7-8"> De 7h a 8h
+                </label>
+                <label>
+                    <input type="checkbox" name="menu" value="6-7"> De 6h a 7h
+                </label>
+                <label>
+                    <input type="checkbox" name="menu" value="5-6"> De 5h a 6h 
+                </label>
+                <label>
+                    <input type="checkbox" name="menu" value="4-5"> De 4h a 5h 
+                </label>
+                <label>
+                    <input type="checkbox" name="menu" value="3-4"> De 3h a 4h
+                </label>
+                <label>
+                    <input type="checkbox" name="menu" value="2-3"> De 2h a 3h 
+                </label>
+                <label>
+                    <input type="checkbox" name="menu" value="1-2"> De 1h a 2h
+                </label>
+                <label>
+                    <input type="checkbox" name="menu" value="0-1"> Até 1h
+                </label>
+                <label>
+                    <input type="checkbox" name="menu" value="0"> Não trabalhou <span></span>
+                </label>
+            </div>
+            <div class="pictogram"></div>
+            <div class="explanation-2">
+                <p><b>Mapa de calor</b></p>
+                <p>O heatmap (mapa de calor) abaixo traz uma ideia do quanto ele trabalhou ao longo dos 4 anos.  Quanto mais próximo ao amarelo, mais horas ele trabalhou naquele dia. E quanto mais próximo do roxo escuro, menos ele trabalhou.</p>
+            </div>
+            <div class="fig">
+                <img src="heatmap.png">
+            </div>
+        </main>
+        <script src='calendar.js'></script>
+    </body>
+</html>
