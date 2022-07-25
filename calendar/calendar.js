@@ -113,3 +113,19 @@ function mostrar(dados){
         }        
     }
 }
+
+//Carrega novos dados para inserir heatmap
+let raw = 'https://raw.githubusercontent.com/oquejair/site/main/heatmap.txt';
+
+//Abre os dados 
+fetch(raw)
+.then(function(response) {
+  return response.text();
+})
+.then(function(response){
+
+   let figura = document.querySelector('.fig');
+   let img = document.createElement("IMG");
+   img.src = response;
+   figura.appendChild(img);
+});
