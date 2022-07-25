@@ -1,5 +1,5 @@
 //Carega dados
-let url = 'https://raw.githubusercontent.com/'
+let url = 'https://raw.githubusercontent.com/oquejair/site/main/dados.json?token=GHSAT0AAAAAABW57GUSTBGJYPRCONC2XGXKYW55TMQ'
 fetch(url)
 .then(resposta => resposta.json())
 .then(dados => mostrar (dados))
